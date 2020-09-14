@@ -46,7 +46,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Sep 13, 2020 06:51:40 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Sep 14, 2020 05:02:51 PM</span>
 				</a>
 			</li>
 			<li>
@@ -72,7 +72,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -85,9 +84,8 @@
 					<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@tag</a></li>
-					<li><a href='#'>@tag1</a></li>
-					<li><a href='#'>@tag2</a></li>
+					<li><a href='#'>@loginFeature</a></li>
+					<li><a href='#'>@LoginApplication</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -135,10 +133,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -150,10 +148,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='100%'>3</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -165,10 +163,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='30.769%'><span class='strong'>4</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>6</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='69.231%'>9</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -182,134 +180,70 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf skip' status='skip' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Title of your feature</span>
-						<span class='test-time'>Sep 13, 2020 06:51:40 PM</span>
-						<span class='test-status right skip'>skip</span>
+						<span class='test-time'>Sep 14, 2020 05:02:51 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenario node' test-id='2' status='skip'>
+<div class='scenario node' test-id='2' status='pass'>
 	<div class='category-list'>
-		<span class='category label white-text'>@tag1</span>
+		<span class='category label white-text'>@LoginApplication</span>
 	</div>
-	<span class='duration right label'>0h 0m 7s+789ms</span>
+	<span class='duration right label'>0h 0m 18s+912ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
-		<span class="desc-text">Title of your scenario</span>
+		<span class="desc-text">User Login validation</span>
 	</div>
 	<ul class='steps'>
 		<li test-id='3' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
-			<span class="bdd-step-name">Given I want to write a step with precondition</span>
+			<span class="bdd-step-name">Given User launch Browser</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='4' class='node and pass' status='pass'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And some other precondition</span>
-			
-		</li>
-		<li test-id='5' class='node when skip' status='skip'>
+		<li test-id='4' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
-			<span class="bdd-step-name">When I complete action</span>
-				<div class='pre'>skipped</div>
+			<span class="bdd-step-name">When user launch application</span>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='6' class='node and skip' status='skip'>
+		<li test-id='5' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And some other action</span>
-				<div class='pre'>skipped</div>
+			<span class="bdd-step-name">And User Click on Login Button</span>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='7' class='node and skip' status='skip'>
+		<li test-id='6' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And yet another action</span>
-				<div class='pre'>skipped</div>
+			<span class="bdd-step-name">And User enter User email as "learn@test.com"</span>
+				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='8' class='node then skip' status='skip'>
+		<li test-id='7' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enter password as "Test@123"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='8' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
-			<span class="bdd-step-name">Then I validate the outcomes</span>
-				<div class='pre'>skipped</div>
+			<span class="bdd-step-name">Then Validate Application login successfull</span>
+				<div class='pre'>passed</div>
 			
-		</li>
-		<li test-id='9' class='node and skip' status='skip'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And check more outcomes</span>
-				<div class='pre'>skipped</div>
-			
-		</li>
-	</ul>
-</div>
-<div class='scenariooutline node' test-id='10' status='skip'>
-	<span class='duration right label'>0h 0m 0s+159ms</span>
-	<div class='desc'>
-		<b>ScenarioOutline</b>
-		<span class="desc-text">Title of your scenario outline</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='11' class='node scenario skip' status='skip'>
-			<div class='category-list'>
-				<span class='category label white-text'>@tag</span>
-				<span class='category label white-text'>@tag2</span>
-			</div>
-			
-			<b>Scenario</b>
-			
-			<span class="bdd-step-name">Title of your scenario outline</span>
-			
-				<ul class='steps'>
-					<li test-id='12' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given I want to write a step with <"name>"</span>
-					</li>
-					<li test-id='13' class='node when skip' status='skip'><b>When</b>
-						<span class="bdd-step-name">When I check for the <"value"> in step</span>
-							<div class='pre'>skipped</div>
-					</li>
-					<li test-id='14' class='node then skip' status='skip'><b>Then</b>
-						<span class="bdd-step-name">Then I verify the <"status"> in step</span>
-							<div class='pre'>skipped</div>
-					</li>
-				</ul>
-		</li>
-		<li test-id='15' class='node scenario skip' status='skip'>
-			<div class='category-list'>
-				<span class='category label white-text'>@tag</span>
-				<span class='category label white-text'>@tag2</span>
-			</div>
-			
-			<b>Scenario</b>
-			
-			<span class="bdd-step-name">Title of your scenario outline</span>
-			
-				<ul class='steps'>
-					<li test-id='16' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given I want to write a step with <"name>"</span>
-					</li>
-					<li test-id='17' class='node when skip' status='skip'><b>When</b>
-						<span class="bdd-step-name">When I check for the <"value"> in step</span>
-							<div class='pre'>skipped</div>
-					</li>
-					<li test-id='18' class='node then skip' status='skip'><b>Then</b>
-						<span class="bdd-step-name">Then I verify the <"status"> in step</span>
-							<div class='pre'>skipped</div>
-					</li>
-				</ul>
 		</li>
 	</ul>
 </div>
@@ -367,16 +301,16 @@
 				
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@tag</span>
+						<span class='category-name'>@loginFeature</span>
 						<span class='category-status right'>
-							<span class='label others'>3</span>
+							<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
 							
-							<span class='label yellow darken-2 white-text'>Others: 3</span>
 						</div>
 					
 						<div class='category-tests'>
@@ -390,19 +324,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Sep 13, 2020 06:51:40 PM</td>
+										<td>Sep 14, 2020 05:02:51 PM</td>
 										<td class='linked' test-id='1'>Title of your feature</td>
-										<td><span class='test-status skip'>skip</span></td>
-									</tr>
-									<tr>
-										<td>Sep 13, 2020 06:51:48 PM</td>
-										<td class='linked' test-id='11'>Title of your feature.Title of your scenario outline.Title of your scenario outline</td>
-										<td><span class='test-status skip'>skip</span></td>
-									</tr>
-									<tr>
-										<td>Sep 13, 2020 06:51:48 PM</td>
-										<td class='linked' test-id='15'>Title of your feature.Title of your scenario outline.Title of your scenario outline</td>
-										<td><span class='test-status skip'>skip</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -411,16 +335,16 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@tag1</span>
+						<span class='category-name'>@LoginApplication</span>
 						<span class='category-status right'>
-							<span class='label others'>1</span>
+							<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
 							
-							<span class='label yellow darken-2 white-text'>Others: 1</span>
 						</div>
 					
 						<div class='category-tests'>
@@ -434,48 +358,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Sep 13, 2020 06:51:40 PM</td>
-										<td class='linked' test-id='2'>Title of your feature.Title of your scenario</td>
-										<td><span class='test-status skip'>skip</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@tag2</span>
-						<span class='category-status right'>
-							<span class='label others'>2</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							
-							
-							<span class='label yellow darken-2 white-text'>Others: 2</span>
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Sep 13, 2020 06:51:48 PM</td>
-										<td class='linked' test-id='11'>Title of your feature.Title of your scenario outline.Title of your scenario outline</td>
-										<td><span class='test-status skip'>skip</span></td>
-									</tr>
-									<tr>
-										<td>Sep 13, 2020 06:51:48 PM</td>
-										<td class='linked' test-id='15'>Title of your feature.Title of your scenario outline.Title of your scenario outline</td>
-										<td><span class='test-status skip'>skip</span></td>
+										<td>Sep 14, 2020 05:02:51 PM</td>
+										<td class='linked' test-id='2'>Title of your feature.User Login validation</td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -509,31 +394,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>3</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>13</div>
+					<div class='panel-lead'>6</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Sep 13, 2020 06:51:40 PM</div>
+					<div class='panel-lead'>Sep 14, 2020 05:02:51 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Sep 13, 2020 06:51:50 PM</div>
+			 		<div class='panel-lead'>Sep 14, 2020 05:03:10 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>9,546ms</div>
+					<div class='panel-lead'>19,460ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -576,22 +461,16 @@
 							<th>Others</th>
 						</tr>
 						<tr>
-							<td>@tag</td>
-							<td>0</td>
-							<td>0</td>
-							<td>3</td>
-						</tr>
-						<tr>
-							<td>@tag1</td>
-							<td>0</td>
-							<td>0</td>
+							<td>@loginFeature</td>
 							<td>1</td>
+							<td>0</td>
+							<td>0</td>
 						</tr>
 						<tr>
-							<td>@tag2</td>
+							<td>@LoginApplication</td>
+							<td>1</td>
 							<td>0</td>
 							<td>0</td>
-							<td>2</td>
 						</tr>
 					</table>
 				</div>
@@ -615,31 +494,31 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 0,
+				passParent: 1,
 				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
-				skipParent: 1,
-				exceptionsParent: 1,
+				skipParent: 0,
+				exceptionsParent: 0,
 				
-				passChild: 0,
+				passChild: 1,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
-				skipChild: 3,
+				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 3,
+				exceptionsChild: 0,
 				
-				passGrandChild: 4,
+				passGrandChild: 6,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 9,
+				skipGrandChild: 0,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 9,
+				exceptionsGrandChild: 0,
 			};
 		</script>
 		

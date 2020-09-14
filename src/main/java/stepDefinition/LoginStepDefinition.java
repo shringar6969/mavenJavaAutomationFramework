@@ -1,79 +1,51 @@
 package stepDefinition;
 
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import cucumber.api.PendingException;
 import cucumber.api.java.en.*;
+import junit.framework.Assert;
 
 public class LoginStepDefinition {
 	WebDriver driver;
-	@Given("^I want to write a step with precondition$")
-	public void i_want_to_write_a_step_with_precondition() throws Throwable {
+
+@Given("^User launch Browser$")
+public void user_launch_Browser() throws Throwable {
 	  System.setProperty("webdriver.chrome.driver", "/usr/lib/chromium-browser/chromedriver");
 	  driver= new ChromeDriver();
-	  driver.get("https://freecrm.com/");
-	}
-	
-	@Given("^I want to write a step with <\"([^\"]*)\"$")
-	public void i_want_to_write_astep_with(String arg1) throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
-	}
+	  
+}
 
-	@Given("^some other precondition$")
-	public void some_other_precondition() throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
-	}
+@When("^user launch application$")
+public void user_launch_application() throws Throwable {
+	driver.get("https://freecrm.com/");
+}
 
-	@When("^I complete action$")
-	public void i_complete_action() throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
-	}
+@When("^User Click on Login Button$")
+public void user_Click_on_Login_Button() throws Throwable {
+	driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/ul/li[1]")).click();
+}
 
-	@When("^some other action$")
-	public void some_other_action() throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
-	}
+@When("^User enter User email as \"([^\"]*)\"$")
+public void user_enter_User_email_as(String email) throws Throwable {
+	driver.findElement(By.xpath("/html/body/div[1]/div/div/form/div/div[1]/div/input")).sendKeys(email);
+}
 
-	@When("^yet another action$")
-	public void yet_another_action() throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
-	}
+@When("^User enter password as \"([^\"]*)\"$")
+public void user_enter_password_as(String password) throws Throwable {
+	Thread.sleep(3000);
+    	driver.findElement(By.xpath("//input[@name='password']")).sendKeys(password);
+}
 
-	@Then("^I validate the outcomes$")
-	public void i_validate_the_outcomes() throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
-	}
+@Then("^Validate Application login successfull$")
+public void validate_Application_login_successfull() throws Throwable {
+   driver.findElement(By.xpath("/html/body/div[1]/div/div/form/div/div[3]")).click();
+   Thread.sleep(5000);
+}
 
-	@Then("^check more outcomes$")
-	public void check_more_outcomes() throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
-	}
 
-	@Given("^I want to write a step with <\"([^\"]*)\">$")
-	public void i_want_to_write_a_step_with(String arg1) throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
-	}
-
-	@When("^I check for the <\"([^\"]*)\"> in step$")
-	public void i_check_for_the_in_step(String arg1) throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
-	}
-
-	@Then("^I verify the <\"([^\"]*)\"> in step$")
-	public void i_verify_the_in_step(String arg1) throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
-	}
 
 }

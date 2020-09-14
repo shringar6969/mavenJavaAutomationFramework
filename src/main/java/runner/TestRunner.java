@@ -15,6 +15,7 @@ import cucumber.api.junit.Cucumber;
  features = "src/main/java/feature"
  ,glue={"stepDefinition"}
  ,plugin={"com.cucumber.listener.ExtentCucumberFormatter:target/html/ExtentReport.html"}
+ ,dryRun=false
  )
 
 
