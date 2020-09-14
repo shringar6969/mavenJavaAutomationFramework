@@ -11,10 +11,10 @@
     <protocol>https</protocol>
     
     <!-- title of the document -->
-    <documentTitle>ToolsQA - Cucumber Framework</documentTitle>
+    <documentTitle>FreeCrm -Maven Cucumber Framework</documentTitle>
     
     <!-- report name - displayed at top-nav -->
-    <reportName>ToolsQA - Cucumber Report</reportName>
+    <reportName>FREECRM - Cucumber Report</reportName>
     
     <!-- global date format override -->  <!-- defaults to yyyy-MM-dd -->
     <dateFormat>yyyy-MM-dd</dateFormat>
