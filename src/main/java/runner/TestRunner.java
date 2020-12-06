@@ -1,6 +1,6 @@
 package runner;
 
-import java.io.File;
+
 
 import org.junit.AfterClass;
 import org.junit.runner.RunWith;
@@ -25,15 +25,9 @@ import cucumber.api.junit.Cucumber;
 
 public class TestRunner {
 	@AfterClass
-	public static void setup()
-	{
-	Reporter.loadXMLConfig(new File("/home/sumitjobprep/eclipse-workspace/mavenAutomation/src/main/java/resources/config-extent.xml"));
-	//Reporter.setSystemInfo("Test User", System.getProperty("user.name"));
-	Reporter.setSystemInfo("User Name", "Sumit Kumar");
-	Reporter.setSystemInfo("Application Name", "Test App ");
-	Reporter.setSystemInfo("Operating System Type", System.getProperty("os.name").toString());
-	Reporter.setSystemInfo("Environment", "Production");
-	Reporter.setTestRunnerOutput("Test Execution Cucumber Report");
-	}
-
+	
+    public static void writeExtentReport() {
+		String reportPath = "src/main/java/resources/config-extent.xml";
+        Reporter.loadXMLConfig(reportPath);
+    }
 }
