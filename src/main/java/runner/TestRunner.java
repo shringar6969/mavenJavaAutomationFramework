@@ -2,12 +2,15 @@ package runner;
 
 
 
-import org.junit.AfterClass;
+import org.junit.*;
 import org.junit.runner.RunWith;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.cucumber.listener.Reporter;
 
 import cucumber.api.CucumberOptions;
+import cucumber.api.java.After;
 import cucumber.api.junit.Cucumber;
  
 @RunWith(Cucumber.class)
@@ -24,10 +27,17 @@ import cucumber.api.junit.Cucumber;
 
 
 public class TestRunner {
-	@AfterClass
 	
+	@AfterClass
     public static void writeExtentReport() {
 		String reportPath = "src/main/java/resources/config-extent.xml";
         Reporter.loadXMLConfig(reportPath);
     }
+	
+//	@After
+//	public static void tearDown()
+//	{
+//		
+//	}
+	
 }
